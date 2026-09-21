@@ -1,33 +1,244 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <title>Sobre mim</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bárbara Rodrigues Mateus</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-rose-50 font-sans text-rose-950">
 
-    <div class="bg-pink-200 p-20">
+  <!-- NAV -->
+  <header class="sticky top-0 z-50 bg-rose-50/90 backdrop-blur border-b border-rose-200">
+    <nav class="max-w-5xl mx-auto flex items-center justify-between px-6 py-4">
+      <a href="#topo" class="text-lg font-bold text-rose-700 tracking-wide">BRM</a>
+      <ul class="hidden md:flex gap-8 text-sm font-semibold text-rose-800">
+        <li><a href="#sobre" class="hover:text-rose-500 transition">Sobre</a></li>
+        <li><a href="#formacao" class="hover:text-rose-500 transition">Formação</a></li>
+        <li><a href="#experiencia" class="hover:text-rose-500 transition">Experiência</a></li>
+        <li><a href="#artigo" class="hover:text-rose-500 transition">Artigo</a></li>
+        <li><a href="#skills" class="hover:text-rose-500 transition">Skills</a></li>
+        <li><a href="#contato" class="hover:text-rose-500 transition">Contato</a></li>
+      </ul>
+      <a href="#contato" class="hidden md:inline-block bg-rose-600 text-white text-sm font-semibold px-4 py-2 rounded-full hover:bg-rose-700 transition">Falar comigo</a>
+    </nav>
+  </header>
 
-        <h1 class="text-rose-800 text-center p-10 font-sans text-3xl">Sobre mim</h1>
+  <!-- HERO -->
+  <section id="topo" class="relative overflow-hidden bg-gradient-to-br from-rose-200 via-pink-100 to-rose-50">
+    <div class="absolute -top-24 -right-24 w-96 h-96 bg-rose-300/40 rounded-full blur-3xl"></div>
+    <div class="absolute -bottom-32 -left-16 w-80 h-80 bg-pink-300/40 rounded-full blur-3xl"></div>
 
-        <img class="w-[200px] rounded-full border-[3px] border-rose-700 p-[5px] block mx-auto" src="https://github.com/babsnabarbara.png" alt="Foto de perfil">
+    <div class="relative max-w-5xl mx-auto px-6 py-24 flex flex-col md:flex-row items-center gap-12">
+      <img src="https://github.com/babsnabarbara.png" alt="Foto de Bárbara Rodrigues Mateus"
+           class="w-44 h-44 rounded-full object-cover border-4 border-white shadow-xl shadow-rose-300/60 ring-4 ring-rose-300">
+      <div class="text-center md:text-left">
+        <p class="uppercase tracking-widest text-rose-600 font-semibold text-sm mb-2">Ciência da Computação · UFOP</p>
+        <h1 class="text-4xl md:text-5xl font-extrabold text-rose-900 leading-tight">Bárbara Rodrigues Mateus</h1>
+        <p class="mt-4 text-rose-800 text-lg max-w-xl">
+          Dados, nuvem e simulação de redes veiculares. Pesquisa aplicada em cidades inteligentes,
+          experiência prática com AWS e uma publicação internacional na IEEE.
+        </p>
+        <div class="mt-8 flex flex-wrap justify-center md:justify-start gap-4">
+          <a href="#artigo" class="bg-rose-600 text-white font-semibold px-6 py-3 rounded-full shadow-lg shadow-rose-400/40 hover:bg-rose-700 hover:-translate-y-0.5 transition">Ver artigo publicado</a>
+          <a href="#contato" class="bg-white text-rose-700 font-semibold px-6 py-3 rounded-full border-2 border-rose-300 hover:bg-rose-100 transition">Entrar em contato</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <p class="text-center font-bold text-rose-700">Meu nome é Bárbara Rodrigues Mateus</p>
+  <!-- DESTAQUES -->
+  <section class="max-w-5xl mx-auto px-6 -mt-10 relative z-10">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="bg-white rounded-2xl shadow-md shadow-rose-200/70 p-5 text-center">
+        <p class="text-2xl font-extrabold text-rose-600">1</p>
+        <p class="text-xs font-semibold text-rose-800 mt-1">Artigo IEEE publicado</p>
+      </div>
+      <div class="bg-white rounded-2xl shadow-md shadow-rose-200/70 p-5 text-center">
+        <p class="text-2xl font-extrabold text-rose-600">2+ anos</p>
+        <p class="text-xs font-semibold text-rose-800 mt-1">Pesquisa em redes veiculares</p>
+      </div>
+      <div class="bg-white rounded-2xl shadow-md shadow-rose-200/70 p-5 text-center">
+        <p class="text-2xl font-extrabold text-rose-600">4.800</p>
+        <p class="text-xs font-semibold text-rose-800 mt-1">Simulações executadas</p>
+      </div>
+      <div class="bg-white rounded-2xl shadow-md shadow-rose-200/70 p-5 text-center">
+        <p class="text-2xl font-extrabold text-rose-600">🇦🇹</p>
+        <p class="text-xs font-semibold text-rose-800 mt-1">Intercâmbio na Áustria</p>
+      </div>
+    </div>
+  </section>
 
-        <h2 class="text-rose-700 text-center text-2xl font-semibold">Meus interesses</h2>
-        <ul class="bg-rose-100 py-5 px-20 rounded-xl border-2 border-rose-700 w-fit min-w-[350px] mx-auto mt-[15px] mb-[15px] list-inside shadow-md shadow-rose-700/30 text-center">
-            <li class="mb-[10px] hover:text-rose-700">Programação</li>
-            <li class="mb-[10px] hover:text-rose-700">Animais</li>
-            <li class="mb-[10px] hover:text-rose-700">Música</li>
+  <!-- SOBRE -->
+  <section id="sobre" class="max-w-5xl mx-auto px-6 py-24">
+    <span class="text-rose-500 font-semibold text-sm uppercase tracking-widest">Sobre mim</span>
+    <h2 class="text-3xl font-bold text-rose-900 mt-2 mb-6">Quem é Bárbara</h2>
+    <p class="text-rose-800 leading-relaxed max-w-3xl">
+      Sou estudante de Ciência da Computação na Universidade Federal de Ouro Preto (UFOP), com mais de dois anos
+      de pesquisa aplicada em redes veiculares e cidades inteligentes, além de experiência prática com AWS (S3, EC2)
+      em ambiente corporativo. Sou autora de um artigo publicado na conferência internacional <span class="font-semibold text-rose-600">IEEE DCOSS-IoT 2024</span>,
+      usando Python, SUMO e TraCI em simulações de redes veiculares. Tive experiência acadêmica internacional na Áustria
+      e hoje busco uma posição de estágio em Engenharia de Dados para aplicar tudo que aprendi em Python, SQL,
+      pipelines de dados e infraestrutura em nuvem.
+    </p>
+
+    <div class="mt-10 flex flex-wrap gap-3">
+      <span class="bg-rose-100 text-rose-700 text-sm font-semibold px-4 py-2 rounded-full">Redes veiculares</span>
+      <span class="bg-rose-100 text-rose-700 text-sm font-semibold px-4 py-2 rounded-full">Cidades inteligentes</span>
+      <span class="bg-rose-100 text-rose-700 text-sm font-semibold px-4 py-2 rounded-full">Simulação SUMO/TraCI</span>
+      <span class="bg-rose-100 text-rose-700 text-sm font-semibold px-4 py-2 rounded-full">Cloud &amp; AWS</span>
+      <span class="bg-rose-100 text-rose-700 text-sm font-semibold px-4 py-2 rounded-full">Inglês avançado</span>
+    </div>
+  </section>
+
+  <!-- FORMAÇÃO -->
+  <section id="formacao" class="bg-white border-y border-rose-100">
+    <div class="max-w-5xl mx-auto px-6 py-24">
+      <span class="text-rose-500 font-semibold text-sm uppercase tracking-widest">Trajetória</span>
+      <h2 class="text-3xl font-bold text-rose-900 mt-2 mb-12">Formação acadêmica</h2>
+
+      <ol class="relative border-l-4 border-rose-200 ml-3 space-y-12">
+
+        <li class="ml-8">
+          <span class="absolute -left-[11px] flex items-center justify-center w-5 h-5 bg-rose-500 rounded-full ring-4 ring-white"></span>
+          <p class="text-sm font-semibold text-rose-500">2021 — Atual</p>
+          <h3 class="text-lg font-bold text-rose-900 mt-1">Bacharelado em Ciência da Computação</h3>
+          <p class="text-rose-700">Universidade Federal de Ouro Preto (UFOP)</p>
+        </li>
+
+        <li class="ml-8">
+          <span class="absolute -left-[11px] flex items-center justify-center w-5 h-5 bg-rose-500 rounded-full ring-4 ring-white"></span>
+          <p class="text-sm font-semibold text-rose-500">Set 2025 — Mar 2026</p>
+          <h3 class="text-lg font-bold text-rose-900 mt-1">Intercâmbio em Industrial Data Science</h3>
+          <p class="text-rose-700">Montanuniversität Leoben, Áustria</p>
+          <p class="text-rose-600 text-sm mt-1">Disciplina cursada: Python aplicado a dados.</p>
+        </li>
+
+        <li class="ml-8">
+          <span class="absolute -left-[11px] flex items-center justify-center w-5 h-5 bg-rose-500 rounded-full ring-4 ring-white"></span>
+          <p class="text-sm font-semibold text-rose-500">2017 — 2019</p>
+          <h3 class="text-lg font-bold text-rose-900 mt-1">Técnico em Automação</h3>
+          <p class="text-rose-700">IFMG</p>
+        </li>
+
+      </ol>
+    </div>
+  </section>
+
+  <!-- EXPERIÊNCIA -->
+  <section id="experiencia" class="max-w-5xl mx-auto px-6 py-24">
+    <span class="text-rose-500 font-semibold text-sm uppercase tracking-widest">Trabalho &amp; pesquisa</span>
+    <h2 class="text-3xl font-bold text-rose-900 mt-2 mb-12">Experiência profissional</h2>
+
+    <div class="grid md:grid-cols-2 gap-8">
+
+      <div class="bg-white rounded-2xl p-8 shadow-md shadow-rose-200/70 hover:-translate-y-1 transition">
+        <p class="text-xs font-semibold text-rose-500 uppercase tracking-widest">Nov 2024 — Jan 2025</p>
+        <h3 class="text-xl font-bold text-rose-900 mt-2">Estagiária em Data Science e AWS</h3>
+        <p class="text-rose-600 font-semibold mb-4">Compass UOL</p>
+        <ul class="text-rose-800 text-sm space-y-2 list-disc list-inside">
+          <li>Uso do Amazon S3 para armazenamento e versionamento de datasets em pipelines de análise.</li>
+          <li>Uso do Amazon EC2 para provisionamento de ambientes de processamento.</li>
+          <li>Aplicação de Data Science com Python em fluxos de computação em nuvem.</li>
+          <li>Experiência prática em ambiente corporativo ágil, com contato direto em arquitetura em nuvem.</li>
         </ul>
+      </div>
 
-        <h2 class="text-rose-700 text-center text-2xl font-semibold">Contato</h2>
-        <div class="bg-rose-100 text-rose-700 py-[10px] px-[15px] rounded-lg w-fit mx-auto my-[10px] font-bold">Telefone: (31) 92003-8545</div>
-        <div class="bg-rose-100 text-rose-700 py-[10px] px-[15px] rounded-lg w-fit mx-auto my-[10px] font-bold">Email: barbara@rodrigues@aluna.ufop.edu.br</div>
-        <div class="bg-rose-100 text-rose-700 py-[10px] px-[15px] rounded-lg w-fit mx-auto my-[10px] font-bold">Endereço: Ouro Preto, MG</div>
+      <div class="bg-white rounded-2xl p-8 shadow-md shadow-rose-200/70 hover:-translate-y-1 transition">
+        <p class="text-xs font-semibold text-rose-500 uppercase tracking-widest">Out 2022 — Fev 2025</p>
+        <h3 class="text-xl font-bold text-rose-900 mt-2">Pesquisadora — Redes Veiculares e Cidades Inteligentes</h3>
+        <p class="text-rose-600 font-semibold mb-4">UFOP</p>
+        <ul class="text-rose-800 text-sm space-y-2 list-disc list-inside">
+          <li>Coautoria do artigo publicado na IEEE DCOSS-IoT 2024.</li>
+          <li>Expansão do estudo para 5 estratégias de posicionamento de estações de recarga.</li>
+          <li>Grid experimental com 600 simulações por estratégia (8.000 veículos cada).</li>
+          <li>Achado principal: algoritmo genético tem o melhor tempo médio de viagem, com maior custo computacional.</li>
+        </ul>
+      </div>
 
     </div>
+  </section>
+
+  <!-- ARTIGO -->
+  <section id="artigo" class="bg-gradient-to-r from-rose-600 to-pink-500">
+    <div class="max-w-5xl mx-auto px-6 py-20 text-center text-white">
+      <span class="uppercase tracking-widest text-rose-100 font-semibold text-sm">Publicação científica</span>
+      <h2 class="text-3xl font-bold mt-2 mb-4">Strategies for Locating Electric Vehicle Charging Stations in Smart Cities</h2>
+      <p class="max-w-2xl mx-auto text-rose-50">
+        Artigo apresentado na conferência internacional IEEE DCOSS-IoT 2024, sobre estratégias de posicionamento
+        de estações de recarga de veículos elétricos em cidades inteligentes, com simulações em SUMO/TraCI.
+      </p>
+      <a href="https://ieeexplore.ieee.org/document/10621538" target="_blank" rel="noopener noreferrer"
+         class="inline-block mt-8 bg-white text-rose-700 font-bold px-8 py-3 rounded-full shadow-lg hover:bg-rose-50 hover:-translate-y-0.5 transition">
+        Ler artigo no IEEE Xplore ↗
+      </a>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="max-w-5xl mx-auto px-6 py-24">
+    <span class="text-rose-500 font-semibold text-sm uppercase tracking-widest">Competências</span>
+    <h2 class="text-3xl font-bold text-rose-900 mt-2 mb-12">Skills técnicas</h2>
+
+    <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
+
+      <div class="bg-rose-100 rounded-2xl p-6">
+        <h3 class="font-bold text-rose-800 mb-3">Linguagens</h3>
+        <p class="text-rose-700 text-sm">Python, C, C++, SQL</p>
+      </div>
+
+      <div class="bg-rose-100 rounded-2xl p-6">
+        <h3 class="font-bold text-rose-800 mb-3">Dados</h3>
+        <p class="text-rose-700 text-sm">Pandas, Análise de Dados</p>
+      </div>
+
+      <div class="bg-rose-100 rounded-2xl p-6">
+        <h3 class="font-bold text-rose-800 mb-3">Simulação</h3>
+        <p class="text-rose-700 text-sm">SUMO, TraCI</p>
+      </div>
+
+      <div class="bg-rose-100 rounded-2xl p-6">
+        <h3 class="font-bold text-rose-800 mb-3">Nuvem &amp; Infra</h3>
+        <p class="text-rose-700 text-sm">AWS (S3, EC2), Docker, Apache Airflow</p>
+      </div>
+
+      <div class="bg-rose-100 rounded-2xl p-6">
+        <h3 class="font-bold text-rose-800 mb-3">Ferramentas</h3>
+        <p class="text-rose-700 text-sm">Git, GitHub, Linux</p>
+      </div>
+
+      <div class="bg-rose-100 rounded-2xl p-6">
+        <h3 class="font-bold text-rose-800 mb-3">Idiomas</h3>
+        <p class="text-rose-700 text-sm">Português (nativo), Inglês (avançado)</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <footer id="contato" class="bg-rose-900 text-rose-50">
+    <div class="max-w-5xl mx-auto px-6 py-20 text-center">
+      <h2 class="text-3xl font-bold">Vamos conversar?</h2>
+      <p class="text-rose-200 mt-3 max-w-xl mx-auto">
+        Estou em busca de uma posição de estágio em Engenharia de Dados. Se você quer trocar uma ideia sobre
+        dados, nuvem ou redes veiculares, me chama!
+      </p>
+
+      <div class="mt-10 flex flex-col md:flex-row justify-center gap-4 md:gap-6 text-sm">
+        <a href="mailto:barbara.rodrigues@aluna.ufop.edu.br" class="bg-rose-800 hover:bg-rose-700 transition px-5 py-3 rounded-full">
+          ✉️ barbara.rodrigues@aluna.ufop.edu.br
+        </a>
+        <a href="tel:+5531920038545" class="bg-rose-800 hover:bg-rose-700 transition px-5 py-3 rounded-full">
+          📱 (31) 92003-8545
+        </a>
+        <a href="https://www.linkedin.com/in/barbararodriguesmateus" target="_blank" rel="noopener noreferrer" class="bg-rose-800 hover:bg-rose-700 transition px-5 py-3 rounded-full">
+          💼 LinkedIn
+        </a>
+      </div>
+
+      <p class="text-rose-300 text-xs mt-12">Ouro Preto, MG · © Bárbara Rodrigues Mateus</p>
+    </div>
+  </footer>
 
 </body>
 </html>
