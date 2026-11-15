@@ -6,7 +6,7 @@
     <title>Demo Django + Tailwind</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gradient-to-br from-pink-900 via-rose-800 to-slate-900 min-h-screen text-slate-100 min-h-screen text-slate-100">
+<body class="bg-gradient-to-br from-pink-900 via-rose-800 to-slate-900 min-h-screen text-slate-100">
 
     <header class="container mx-auto px-6 py-12">
         <nav class="flex items-center justify-between">
@@ -65,12 +65,21 @@
                         <li class="border-l-2 border-emerald-400 pl-4 py-1">
                             <h3 class="font-semibold">{{ m.titulo }}</h3>
                             {% if m.categoria %}
-				<span class="inline-block px-2 py-0.5 mt-1 bg-indigo-500/20 text-indigo-300 text-xs rounded-full">
-           				 {{ m.categoria.nome }}
-        			</span>
-   			    {% endif %}
+                                <span class="inline-block px-2 py-0.5 mt-1 bg-indigo-500/20 text-indigo-300 text-xs rounded-full">
+                                    {{ m.categoria.nome }}
+                                </span>
+                            {% endif %}
                             <p class="text-sm text-slate-300">{{ m.conteudo }}</p>
-                            <span class="text-xs text-slate-400">por {{ m.autor }}</span>   {# ← novo #}
+                            {% if m.tags.all %}
+                                <div class="flex flex-wrap gap-1 mt-1">
+                                    {% for tag in m.tags.all %}
+                                        <span class="inline-block px-2 py-0.5 bg-emerald-500/15 text-emerald-300 text-xs rounded">
+                                            #{{ tag.nome }}
+                                        </span>
+                                    {% endfor %}
+                                </div>
+                            {% endif %}
+                            <span class="text-xs text-slate-400">por {{ m.autor }}</span>
                             <span class="text-xs text-slate-500">{{ m.criada_em|date:"d/m/Y H:i" }}</span>
                         </li>
                     {% endfor %}
